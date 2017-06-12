@@ -4,6 +4,8 @@
         "modules": false
       }
     }]],
-  "plugins": ["transform-vue-jsx"],
+  "plugins": ["transform-vue-jsx",["babel-plugin-component", {
+      "libraryName": "wdui",
+    }]],
   "comments": false
 }

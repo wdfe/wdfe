@@ -44,7 +44,14 @@
 </template>
 
 <script>
+import {RadioGroup, Header, Radio} from 'wdui'
+
 export default {
+  components: {
+    'wd-radiogroup': RadioGroup,
+    'wd-header': Header,
+    'wd-radio': Radio
+  },
   data() {
     return {
       lists: ['选项1', '选项2', '选项3', '选项4'],
