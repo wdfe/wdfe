@@ -31,10 +31,6 @@
         type: [String, Number],
         default: ''
       },
-      maxDisplay: {
-        type: Number,
-        default: 7
-      },
       isShowTitle: {
         type: Boolean,
         default: true
@@ -149,7 +145,6 @@
     }
     .wd-actionsheet-content {
       padding: 0 0 0 40px;
-      overflow-y: auto;
     }
     .wd-actionsheet-footer {
       display: flex;
