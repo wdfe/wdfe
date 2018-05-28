@@ -1,6 +1,6 @@
 <template>
   <transition :name="pickerTransition" @after-enter="onShow()" @after-leave="onHide()">
-    <div class="wd-picker" ref="popup" v-if="visible" :style="{'z-index': zIndex}">
+    <div class="wd-picker" ref="popup" v-if="visible" :style="{'z-index': zIndex}" @touchmove.prevent>
       <header class="wd-picker-header">
         <p class="wd-picker-header-cancel" v-if="isShowCancelButton" @click="onCancel">{{ cancelText }}</p>
         <p class="wd-picker-header-confirm" @click="onConfirm">{{ confirmText }}</p>
